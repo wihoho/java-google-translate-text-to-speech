@@ -13,7 +13,10 @@ public class Text {
 		this.language = language;
 	}
 
-	public String getText() {
+    public Text() {
+    }
+
+    public String getText() {
 		return text;
 	}
 

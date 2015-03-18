@@ -41,7 +41,8 @@ public class Translator {
 
 	public String detect(String text) {
 
-		Text input = new Text(text);
+		Text input = new Text();
+        input.setText(text);
 		Parse parse = new ParseTextDetect(input);
 		parse.parse();
 		return input.getLanguage();
