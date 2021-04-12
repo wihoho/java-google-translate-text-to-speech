@@ -26,8 +26,8 @@ public class Audio {
 	public InputStream getAudio(String text, String languageOutput)
 			throws IOException {
 
-		URL url = new URL(URLCONSTANTS.GOOGLE_TRANSLATE_AUDIO + "q="
-				+ text.replace(" ", "%20") + "&tl=" + languageOutput);
+		URL url = new URL(URL url = new URL("https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=" 
+						    + languageOutput+ "&q=" + text.replace(" ", "+")););
 		URLConnection urlConn = url.openConnection();
 		urlConn.addRequestProperty("User-Agent",
 				"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0)");
